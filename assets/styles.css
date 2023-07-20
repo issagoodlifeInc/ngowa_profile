@@ -48,12 +48,23 @@ li {
 
 nav {
   background-color: var(--blue);
-  padding-block: 2rem;
+  padding-block: 1rem;
 }
 
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .header ul {
@@ -61,13 +72,13 @@ nav {
   gap: 1rem;
 }
 
-.header a {
+.header ul a {
   font-weight: 500;
   letter-spacing: 0.1rem;
   color: var(--white);
 }
 
-.header a:hover {
+.header ul a:hover {
   transform: scale(1.1);
   border-bottom: 3px solid #222;
 }
